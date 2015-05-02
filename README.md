@@ -25,6 +25,22 @@ Requirements
 * A processor which has SSE2, if not disable the SSE option in Makefile.rules.
 * openmpi and Boost.MPI if you want to do distributed parallelization, if not disable the MPI option in Makefile.rules.
 
+Pre Installation (Mac Os Yosemite)
+------------
+Install the required libraries:
+
+* brew instal tbb
+* brew instal boost
+
+Change this line in Makefile.rules
+
+```CXXFLAGS = -fPIC -Wall -fopenmp -O2 -pipe -std=c++0x```
+
+by
+
+```CXXFLAGS = -fPIC -Wall -ltbb -O2 -pipe -std=c++0x```
+
+		
 Installation
 ------------
 If you need to configure some settings (SSE,MPI) just have a look into Makefile.rules
