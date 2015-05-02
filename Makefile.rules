@@ -46,7 +46,7 @@ TCMALLOC =
 
 # Configure CXXFLAGS. 
 # the following CXXFLAGS are for the GNU COMPILER:
-CXXFLAGS = -fPIC -Wall -fopenmp -O2 -pipe -std=c++0x
+CXXFLAGS = -fPIC -Wall -ltbb -O2 -pipe -std=c++0x
 # Possible FLAGS:
 #CXXFLAGS = -fPIC -Wall -fopenmp -pipe -std=c++0x -march=native -O3
 # DEBUG FLAGS:
